@@ -70,7 +70,6 @@ export async function hyperjumpCheckAnnotations(
       absoluteKeywordLocation: "",
     };
   } catch (e) {
-    console.log(e);
     throw e;
   } finally {
     // unregisterSchema(annotationSchemaUrl);
