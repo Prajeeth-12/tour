@@ -28,8 +28,6 @@ export async function hyperjumpValidate(
     }
     const output = await validate(schemaUrl, data as SchemaObject, BASIC);
     return output;
-  } catch (e) {
-    throw e;
   } finally {
     unregisterSchema(schemaUrl);
     if (externalSchema) {
@@ -69,8 +67,6 @@ export async function hyperjumpCheckAnnotations(
       instanceLocation: "",
       absoluteKeywordLocation: "",
     };
-  } catch (e) {
-    throw e;
   } finally {
     // unregisterSchema(annotationSchemaUrl);
   }
